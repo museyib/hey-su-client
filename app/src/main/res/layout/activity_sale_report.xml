@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SaleReportActivity">
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refresh">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/report_data_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9ED2D8D8">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/inv_code"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/inv_name"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/sale_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/sale"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/main_whs_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/main_whs_qty"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/main_rzv_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/main_rzv_qty"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/t20_whs_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/t20_whs_qty"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/t20_rzv_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/t20_rzv_qty"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/t29_whs_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/t29_whs_qty"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/t29_rzv_label"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/t29_rzv_qty"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/price_std"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/price_p01"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/price_vp4"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/brand_code"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/data_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/start_date"
+        android:hint="@string/start_date"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/refresh"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/end_date"
+        android:hint="@string/end_date"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/start_date"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

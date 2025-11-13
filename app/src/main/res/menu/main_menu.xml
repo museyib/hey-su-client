@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/parameters"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/parameters"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/update"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:title="@string/update"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/info"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/info"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/log"
+        app:showAsAction="ifRoom"
+        android:title="@string/logs" />
+</menu>
