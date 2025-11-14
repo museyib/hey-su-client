@@ -14,9 +14,6 @@ import java.util.List;
 import az.inci.hey_su_manage.R;
 import az.inci.hey_su_manage.model.PrevTrxForReturnResponse;
 
-/**
- * @noinspection ClassEscapesDefinedScope
- */
 public class SaleCreditMemoAdapter extends RecyclerView.Adapter<SaleCreditMemoAdapter.ViewHolder> {
     private final Context context;
     private final List<PrevTrxForReturnResponse> localDataList;
@@ -49,8 +46,7 @@ public class SaleCreditMemoAdapter extends RecyclerView.Adapter<SaleCreditMemoAd
         return localDataList.size();
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
-
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView trxNo;
         private final TextView trxDate;
         private final TextView qty;
