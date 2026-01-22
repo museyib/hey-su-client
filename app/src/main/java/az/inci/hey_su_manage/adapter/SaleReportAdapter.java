@@ -48,6 +48,7 @@ public class SaleReportAdapter extends RecyclerView.Adapter<SaleReportAdapter.Vi
         holder.mainRzvQty.setText(String.valueOf(saleReport.getMainRzvQty()));
         holder.t20RzvQty.setText(String.valueOf(saleReport.getT20RzvQty()));
         holder.t29RzvQty.setText(String.valueOf(saleReport.getT29RzvQty()));
+        holder.priceLst.setText(String.valueOf(saleReport.getPriceLst()));
         holder.priceStd.setText(String.valueOf(saleReport.getPriceStd()));
         holder.priceP01.setText(String.valueOf(saleReport.getPriceP01()));
         holder.priceVp4.setText(String.valueOf(saleReport.getPriceVp4()));
@@ -70,6 +71,7 @@ public class SaleReportAdapter extends RecyclerView.Adapter<SaleReportAdapter.Vi
         private final TextView mainRzvQty;
         private final TextView t20RzvQty;
         private final TextView t29RzvQty;
+        private final TextView priceLst;
         private final TextView priceStd;
         private final TextView priceP01;
         private final TextView priceVp4;
@@ -87,6 +89,7 @@ public class SaleReportAdapter extends RecyclerView.Adapter<SaleReportAdapter.Vi
             mainRzvQty = itemView.findViewById(R.id.main_rzv_qty);
             t20RzvQty = itemView.findViewById(R.id.t20_rzv_qty);
             t29RzvQty = itemView.findViewById(R.id.t29_rzv_qty);
+            priceLst = itemView.findViewById(R.id.price_lst);
             priceStd = itemView.findViewById(R.id.price_std);
             priceP01 = itemView.findViewById(R.id.price_p01);
             priceVp4 = itemView.findViewById(R.id.price_vp4);

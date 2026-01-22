@@ -41,6 +41,7 @@ public class StockReportAdapter extends RecyclerView.Adapter<StockReportAdapter.
         holder.brandCode.setText(stockReport.getBrandCode());
         holder.whsQty.setText(String.valueOf(stockReport.getWhsQty()));
         holder.rzvQty.setText(String.valueOf(stockReport.getRzvQty()));
+        holder.priceLst.setText(String.valueOf(stockReport.getPriceLst()));
         holder.priceStd.setText(String.valueOf(stockReport.getPriceStd()));
         holder.priceP01.setText(String.valueOf(stockReport.getPriceP01()));
         holder.priceVp4.setText(String.valueOf(stockReport.getPriceVp4()));
@@ -57,6 +58,7 @@ public class StockReportAdapter extends RecyclerView.Adapter<StockReportAdapter.
         private final TextView brandCode;
         private final TextView whsQty;
         private final TextView rzvQty;
+        private final TextView priceLst;
         private final TextView priceStd;
         private final TextView priceP01;
         private final TextView priceVp4;
@@ -69,6 +71,7 @@ public class StockReportAdapter extends RecyclerView.Adapter<StockReportAdapter.
             brandCode = itemView.findViewById(R.id.brand_code);
             whsQty = itemView.findViewById(R.id.whs_qty);
             rzvQty = itemView.findViewById(R.id.rzv_qty);
+            priceLst = itemView.findViewById(R.id.price_lst);
             priceStd = itemView.findViewById(R.id.price_std);
             priceP01 = itemView.findViewById(R.id.price_p01);
             priceVp4 = itemView.findViewById(R.id.price_vp4);

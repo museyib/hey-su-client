@@ -9,6 +9,7 @@ public class StockReport {
     private String brandCode;
     private double whsQty;
     private double rzvQty;
+    private double priceLst;
     private double priceStd;
     private double priceP01;
     private double priceVp4;

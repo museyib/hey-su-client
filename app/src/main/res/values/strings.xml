@@ -45,6 +45,7 @@
     <string name="check_parameters">Məlumat yüklənə bilmədi. Parametrlərin düzgünlüyünü yoxlayın.</string>
     <string name="connection_problem">Bağlantı problemi</string>
     <string name="t20_whs_qty">Mingəçevir anbarı</string>
+    <string name="price_lst">Alış qiyməti</string>
     <string name="price_std">Baza qiyməti</string>
     <string name="price_p01">Pərakəndə qiymət</string>
     <string name="internal_error">Daxili xəta</string>
