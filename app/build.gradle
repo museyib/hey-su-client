@@ -16,8 +16,8 @@ android {
     defaultConfig {
         applicationId "az.inci.hey_su_manage"
         minSdk 26
-        compileSdkVersion 35
-        targetSdk 34
+        compileSdkVersion 36
+        targetSdkVersion 36
         versionCode 22
         versionName "1.0"
 
@@ -41,12 +41,12 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     implementation 'androidx.preference:preference:1.2.1'
-    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.14'
-    implementation 'com.google.code.gson:gson:2.12.1'
-    implementation 'androidx.activity:activity:1.10.1'
+    implementation 'com.squareup.okhttp3:okhttp:5.3.2'
+    implementation 'com.google.code.gson:gson:2.13.2'
+    implementation 'androidx.activity:activity:1.12.2'
     compileOnly(annotationProcessor 'org.projectlombok:lombok:1.18.30')
 }

@@ -40,6 +40,7 @@ public class ExchangeInfoActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exchange_info);
+        setEdgeToEdge();
 
         invCode = getIntent().getStringExtra("invCode");
 

@@ -53,6 +53,7 @@ public class SaleCreditMemoActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sale_credit_memo);
+        setEdgeToEdge();
         recyclerView = findViewById(R.id.trx_list_view);
         whsListSpinner = findViewById(R.id.whs_list);
         sbeListSpinner = findViewById(R.id.sbe_list);

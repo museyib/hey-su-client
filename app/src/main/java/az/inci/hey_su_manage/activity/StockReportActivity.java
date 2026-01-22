@@ -40,6 +40,7 @@ public class StockReportActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stock_report);
+        setEdgeToEdge();
 
         getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
             @Override
