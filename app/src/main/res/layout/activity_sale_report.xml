@@ -142,6 +142,14 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:gravity="center"
+                    android:text="@string/max_discount_ratio"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
                     android:text="@string/price_vp4"
                     android:textColor="@color/black" />
 

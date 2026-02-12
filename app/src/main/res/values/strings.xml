@@ -84,4 +84,5 @@
     <string name="clear_logs">Loqları sil</string>
     <string name="share">Paylaş</string>
     <string name="logs">Loqlar</string>
+    <string name="max_discount_ratio">Maks. endirim faizi</string>
 </resources>

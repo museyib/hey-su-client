@@ -52,6 +52,7 @@ public class SaleReportAdapter extends RecyclerView.Adapter<SaleReportAdapter.Vi
         holder.priceStd.setText(String.valueOf(saleReport.getPriceStd()));
         holder.priceP01.setText(String.valueOf(saleReport.getPriceP01()));
         holder.priceVp4.setText(String.valueOf(saleReport.getPriceVp4()));
+        holder.maxDiscountRatio.setText(String.valueOf(saleReport.getMaxDiscountRatio()));
     }
 
     @Override
@@ -75,6 +76,7 @@ public class SaleReportAdapter extends RecyclerView.Adapter<SaleReportAdapter.Vi
         private final TextView priceStd;
         private final TextView priceP01;
         private final TextView priceVp4;
+        private final TextView maxDiscountRatio;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -93,6 +95,7 @@ public class SaleReportAdapter extends RecyclerView.Adapter<SaleReportAdapter.Vi
             priceStd = itemView.findViewById(R.id.price_std);
             priceP01 = itemView.findViewById(R.id.price_p01);
             priceVp4 = itemView.findViewById(R.id.price_vp4);
+            maxDiscountRatio = itemView.findViewById(R.id.max_discount_ratio);
         }
     }
 }

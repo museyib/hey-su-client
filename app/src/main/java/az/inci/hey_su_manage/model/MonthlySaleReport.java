@@ -18,4 +18,5 @@ public class MonthlySaleReport {
     private double priceStd;
     private double priceP01;
     private double priceVp4;
+    private double maxDiscountRatio;
 }
